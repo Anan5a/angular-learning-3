@@ -5,12 +5,15 @@ import { Component, input, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './dashboard-item.component.html',
-  styleUrl: './dashboard-item.component.css'
+  styleUrl: './dashboard-item.component.css',
+  host: {
+    class: "dashboard-item"
+  }
 })
 export class DashboardItemComponent {
   @Input({ required: true }) imageData!: {
     src: string,
     alt: string
   }
-  @Input({required:true}) title!:string
+  @Input({ required: true }) title!: string
 }
