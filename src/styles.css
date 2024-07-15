@@ -24,11 +24,13 @@ main {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1.5rem;
-  max-width: 85rem;
+  /* max-width: 85rem; */
+  flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
   #dashboard {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
